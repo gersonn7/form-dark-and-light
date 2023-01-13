@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,400&family=Rowdies&display=swap');
+
+:root{
+    --color-light-10: #f8fafc;
+
+    --color-dark-10: #312d37;
+    --color-dark-100: #797984;
+    --color-dark-1000: #000;
+
+    --color-beige-10: #41295a;
+    --color-beige-100: #2f0743;
+
+    --color-gradient: linear-gradient(to right var(--color-beige-10), var(--color-beige-100));
+}
+
+*{
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #41295a, #2f0743);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginform{
+    background-color: var(--color-light-10);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgb(63, 63, 63);
+    height: fit-content;
+    animation: dark-to-light 0.3s ease-in-out;
+    
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#cabecalho h1{
+    font-size: 40px;
+    position: relative;
+}
+
+#cabecalho h1::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    background-color: var(--color-beige-10);
+    height: 3px;
+    bottom: 3px;
+    border-radius: 5px;
+}
+
+#mode-icon{
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media img{
+    width: 35px;    
+}
+.social-media img:hover{
+    transform: scale(1.2);  
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#inputs_box label{
+    font-size: 15px;
+    color: black;
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-beige-10);
+}
+.input-field i{
+    font-size: 18px;
+    color: black;
+}
+.input-field input{
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+.input-field input{
+    outline: none;
+}
+#esqueceu-senha a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-dark-10);
+}
+#esqueceu-senha a:hover{
+    color: var(--color-beige-10);
+}
+#login-button{
+    border: none;
+    background: linear-gradient(to right, #41295a, #2f0743);
+    color: var(--color-light-10);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#login-button:hover{
+    transform: scale(1.05);
+}
+
+.dark#loginform{
+    color: var(--color-light-10);
+    background-color: var(--color-dark-10);
+    animation: light-to-dark 0.3s ease-in-out;
+    
+}
+.dark#loginform .input-field input,
+.dark#loginform .input-field i{
+    color: white;
+}
+.dark#loginform #inputs_box label{
+    color:white;
+}
+
+@keyframes dark-to-light{
+    0%{
+       background-color:var(--color-dark-10) 
+    }
+
+    100%{
+        background-color: var(--color-light-10);
+    }
+}
+
+@keyframes light-to-dark{
+    0%{
+        background-color: var(--color-light-10);
+    }
+    100%{
+        background-color:var(--color-dark-10)
+    }
+}
+

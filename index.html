@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+   <main id="container">
+        <fomr id="loginform">
+            <div id="cabecalho">
+                <h1>Login</h1>
+                <i id="mode-icon" class="fa-solid fa-moon"></i>
+            </div>
+            <div class="social-media">
+                <a href="">
+                    <img src="assets/images/icons8-logo-discord-48.png" alt="discord_logo">
+                </a>
+                <a href="">
+                    <img src="assets/images/icons8-google-logo-48.png" alt="google_logo">
+                </a>
+                <a href="">
+                    <img src="assets/images/icons8-github-48.png" alt="github_logo">
+                </a>
+            </div>
+            <div id="inputs">
+                <div id="inputs_box">
+                    <label for="nome">nome</label>
+                    <div class="input-field">
+                        <i class="fa-sharp fa-solid fa-user"></i>
+                        <input type="text" id="name" name="name">
+                    </div>
+                </div>
+
+                <div id="inputs_box">
+                    <label for="e-mail">e-mail</label>
+                    <div class="input-field">
+                        <i class="fa-sharp fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <div id="inputs_box">
+                    <label for="senha">senha</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" name="password">
+                    </div>
+                </div>
+                <div id="esqueceu-senha">
+                    <a href="#">
+                        Esqueceu sua senha?
+                    </a>
+                </div>
+            </div>
+            <button type="submit" id="login-button">Entrar</button>
+        </fomr>
+   </main>
+   <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
